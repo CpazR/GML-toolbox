@@ -23,4 +23,4 @@ Style guide:
   
     -AT LEAST utilize the @funcction, @description, and @param tags 
     
-  -For any other questions, see existing scripts for examples.
+  For any other questions, see existing scripts for examples.
