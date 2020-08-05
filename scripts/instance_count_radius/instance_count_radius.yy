@@ -1,8 +1,12 @@
 {
-    "id": "92842606-7ece-468c-a254-47187e4bcec2",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "instance_count_radius",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "instance_",
+    "path": "folders/Scripts/GML-toolbox-sources/functions/instance_.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "instance_count_radius",
+  "tags": [],
+  "resourceType": "GMScript",
 }
