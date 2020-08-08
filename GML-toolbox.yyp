@@ -5,6 +5,7 @@
     {"id":{"name":"forEach","path":"scripts/forEach/forEach.yy",},"order":0,},
     {"id":{"name":"instance_count_radius","path":"scripts/instance_count_radius/instance_count_radius.yy",},"order":0,},
     {"id":{"name":"instance_count_rect","path":"scripts/instance_count_rect/instance_count_rect.yy",},"order":1,},
+    {"id":{"name":"customTimer","path":"scripts/customTimer/customTimer.yy",},"order":1,},
     {"id":{"name":"round_multiple","path":"scripts/round_multiple/round_multiple.yy",},"order":0,},
     {"id":{"name":"move_to_tilemap_nearest","path":"scripts/move_to_tilemap_nearest/move_to_tilemap_nearest.yy",},"order":0,},
     {"id":{"name":"logger","path":"scripts/logger/logger.yy",},"order":0,},
