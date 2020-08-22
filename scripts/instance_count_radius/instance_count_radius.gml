@@ -4,24 +4,25 @@
 ///@param x
 ///@param y
 ///@param radius
+function instance_count_radius(_x, _y, _obj, _rad) {
+	xx = _x;
+	yy = _y;
+	obj = _obj;
+	rad = _rad;
 
-var xx, yy, obj, rad, count, obj_list, obj_count;
+	obj_count = instance_number(obj);
 
-xx = argument0;
-yy = argument1;
-obj = argument2;
-rad = argument3;
+	count = 0;
 
-obj_count = instance_number(obj);
-
-count = 0;
-
-for(var i=0; i < obj_count; i++) {
-	obj_list[i] = instance_find(obj, i);
+	for(var i=0; i < obj_count; i++) {
+		obj_list[i] = instance_find(obj, i);
 	
-	if instance_exists(obj_list[i]) && (point_distance(xx,yy, obj_list[i].x, obj_list[i].y) <= rad) {
- 		count++
+		if instance_exists(obj_list[i]) && (point_distance(xx,yy, obj_list[i].x, obj_list[i].y) <= rad) {
+	 		count++
+		}
 	}
-}
 
-return count;
+	return count;
+
+
+}

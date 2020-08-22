@@ -21,6 +21,10 @@ Style guide:
     
     Documentation:
   
-    -AT LEAST utilize the @funcction, @description, and @param tags 
+    -AT LEAST utilize the @funcction, @description, and @param tags
     
+    -For structs, be sure they're documented to some extent
+      -If a property is intended to be private, be sure to have setters and getters for them, also denote this in the comment
+        -might use functionless macros for readability later
+        
   For any other questions, see existing scripts for examples.
