@@ -1,3 +1,7 @@
+///@function customTimer(callback)
+///@description Assign a callback, run the advance function each step, and have a named alarm
+///@param ds_list1
+///@param ds_list2
 function customTimer(_callback) constructor {
 	// a function to run when timer is activated
 	callback = _callback;
@@ -9,14 +13,20 @@ function customTimer(_callback) constructor {
 	toCount = -1;
 	
 	// a quick way to check if timer is active
-	isActive = false;
+	active = false;
 	
-	function setTimer(_goalCount) {
-		toCount = _goalCount;
-		isActive = true;
+	// return if timer is active or not
+	function isActive() {
+		return active;
 	}
 	
-	// assign and or advance timer
+	// set timer and make active
+	function setTimer(_goalCount) {
+		toCount = _goalCount;
+		active = true;
+	}
+	
+	// advance timer and run callback once time is up
 	function advance() {
 		if !(toCount == -1) {
 			// timer is assinged, advance timer
@@ -26,14 +36,14 @@ function customTimer(_callback) constructor {
 				// reset counters and run callback
 				counter = 0;
 				toCount = -1;
-				isActive = false;
+				active = false;
 				callback();
 			}
 		}
 	}
 }
 
-/* **EXAMPLE**
+/* **EXAMPLES**
 
 // Define in create event:
 myTimer = new customTimer(function() {
@@ -47,5 +57,10 @@ if (conditionIsMet) {
 ...
 
 myTimer.advance();
+
+// You can also check if a timer is currently active before you use it:
+if (!myTimer.isActive()) {
+	myTimer.setTimer(10);
+}
 
 */
