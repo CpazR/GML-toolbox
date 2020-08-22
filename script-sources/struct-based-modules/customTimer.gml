@@ -3,16 +3,16 @@
 ///@param ds_list1
 ///@param ds_list2
 function customTimer(_callback) constructor {
-	// @private a function to run when timer is activated
+	// PRIVATE: a function to run when timer is activated
 	callback = _callback;
 	
-	// @private; main counter for time
+	// PRIVATE: main counter for time
 	counter = 0;
 	
-	// @private; goal for counter
+	// PRIVATE: goal for counter
 	toCount = -1;
 	
-	// @private; a quick way to check if timer is active
+	// PRIVATE: a quick way to check if timer is active
 	active = false;
 	
 	// return if timer is active or not

@@ -1,13 +1,13 @@
 function logger(_logFileName, _fileIsUnique) constructor {
 	
-	// @private; assign a filename and create file
+	// PRIVATE: assign a filename and create file
 	fileName = (_fileIsUnique ? _logFileName + "_" + string_replace(string(date_current_datetime()) + "_", ".", "_") + string(current_second) : _logFileName) + ".txt";
 	
-	// @private; log file index
+	// PRIVATE: log file index
 	logFile = file_text_open_append(fileName);
 
 	
-	// @private; sends texts to log file and prints to console if needed
+	// PRIVATE: sends texts to log file and prints to console if needed
 	function log(_textToLog, _logToConsole) {
 		file_text_write_string(logFile, _textToLog + "\n");
 		if _logToConsole {
